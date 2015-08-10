@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Angular Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+  	<!-- build:css styles/framework.css -->
+  	<!-- bower:css -->
+  	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+  	<!-- endbower -->
+  	<!-- endbuild -->
+
+  	<!-- build:css({.tmp}) styles/app.css -->
+  	<!-- inject:css -->
+  	<link rel="stylesheet" href="/styles/app.css">
+  	<!-- endinject -->
+  	<!-- endbuild -->
+
+  	</head>
+    <body>
+      
+      <div ui-view></div>
+
+    	<!-- build:js scripts/framework.js -->
+    	<!-- bower:js -->
+    	<script src="bower_components/jquery/dist/jquery.js"></script>
+    	<script src="bower_components/angular/angular.js"></script>
+    	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    	<script src="bower_components/angular-animate/angular-animate.js"></script>
+    	<script src="bower_components/angular-resource/angular-resource.js"></script>
+    	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    	<script src="bower_components/angular-touch/angular-touch.js"></script>
+    	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    	<script src="bower_components/modernizr/modernizr.js"></script>
+    	<script src="bower_components/json3/lib/json3.js"></script>
+    	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    	<script src="bower_components/lodash/lodash.js"></script>
+    	<!-- endbower -->
+    	<!-- endbuild -->
+
+      <!-- build:js scripts/app.js -->
+    	<!-- inject:js -->
+    	<script src="scripts/app-module.js"></script>
+    	<script src="scripts/components/main/main-ctrl.js"></script>
+    	<script src="scripts/app-run.js"></script>
+    	<script src="scripts/app-route.js"></script>
+    	<script src="scripts/app-constants.js"></script>
+    	<script src="scripts/app-config.js"></script>
+    	<script src="scripts/app-bootstrap.js"></script>
+    	<!-- endinject -->
+
+      <!-- inject:templates -->
+      <!-- endinject -->
+      <!-- endbuild -->
+
+  	</body>
+</html>  

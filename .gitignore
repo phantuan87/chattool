@@ -1,0 +1,13 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+.idea
+.npm-tmp
+.npm
+.bower-tmp
+.bower-registry
+.bower-cache
+target
+npm-debug.log

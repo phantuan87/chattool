@@ -1,0 +1,43 @@
+{
+  "name": "ng_pim",
+  "version": "0.0.1",
+  "homepage": "https://github.com/phantuan87/angular-starter-kit",
+  "authors": [
+    "Tuan Phan"
+  ],
+  "description": "Angular Starter Kit",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.3",
+    "angular-bootstrap": "~0.13.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.3",
+    "angular-resource": "~1.4.3",
+    "angular-sanitize": "~1.4.3",
+    "angular-touch": "~1.4.3",
+    "angular-cookies": "~1.4.3",
+    "modernizr": "~2.8.3",
+    "json3": "~3.3.2",
+    "bootstrap-sass": "~3.3.5",
+    "fontawesome": "~4.3.0",
+    "lodash": "~3.10.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.3"
+  }
+}

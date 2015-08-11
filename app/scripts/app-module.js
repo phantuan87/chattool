@@ -1,19 +1,11 @@
-(function() {
-  'use strict';
+'use strict';
 
-  angular
-    .module('app', [
-    	'ngAnimate', 
-    	'ngSanitize', 
-    	'ngResource',
-    	'ngTouch',
-    	'ngCookies',
-    	'ui.router', 
-    	'ui.bootstrap'
+import $ from 'jquery';
+import angular from 'angular';
+import 'angular-ui-router';
+
+let appModule = angular.module('app', [
+    'ui.router'
     ]);
 
-  angular.element(document).ready(function () {
-    angular.bootstrap(document, ['app']);
-  });
-})();
-
+export default appModule;

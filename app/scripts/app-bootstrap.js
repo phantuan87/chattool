@@ -1,15 +1,21 @@
-(function() {
-  'use strict';
+'use strict';
 
-  var _bootstrap = angular.bootstrap;
+import appModule from 'scripts/app-module';
 
-  angular.bootstrap = function (document, modules) {
-    /* 
-      We can prepare some steps before angular bootstrap.
-      Ex Login, Load other module, configuration...
-    */
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [appModule.name]);
+});
 
-    _bootstrap(document, modules);
-  };
-
-})();
+//(function() {
+//  var _bootstrap = angular.bootstrap;
+//
+//  angular.bootstrap = function (document, modules) {
+//    /*
+//      We can prepare some steps before angular bootstrap.
+//      Ex Login, Load other module, configuration...
+//    */
+//
+//    _bootstrap(document, modules);
+//  };
+//
+//})();

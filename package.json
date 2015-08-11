@@ -56,5 +56,25 @@
     "require-dir": "~0.3.0",
     "uglify-save-license": "~0.4.1",
     "wiredep": "~3.0.0-beta"
+  },
+  "jspm": {
+    "directories": {
+      "packages": "app/jspm_packages"
+    },
+    "configFile": "app/scripts/config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.3",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "bootstrap-sass": "github:twbs/bootstrap-sass@^3.3.5",
+      "font-awesome": "npm:font-awesome@^4.4.0",
+      "jquery": "github:components/jquery@^2.1.4",
+      "lodash": "npm:lodash@^3.10.1",
+      "text": "github:systemjs/plugin-text@^0.0.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
   }
 }

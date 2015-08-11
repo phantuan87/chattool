@@ -14,27 +14,30 @@ Inject task
 */
 gulp.task('inject', function() {
 	gulp.src('app/styles/*.scss')
-	    .pipe(wiredep({
-	      directory: 'app/bower_components'
-	    }))
+	    //.pipe(wiredep({
+	    //  directory: 'app/jspm_packages'
+	    //}))
+			.pipe($.inject(gulp.src('app/jspm_packages/**/*.scss'), {
+				read: false
+			}))
 	    .pipe(gulp.dest('app/styles'));
 
 	gulp.src('app/*.html')
-		.pipe(wiredep({
-			directory: 'app/bower_components',
-			exclude: [
-	        '/bootstrap-sass-official/assets/javascripts/' // already use by angular-bootstrap
-	      ]
-		}))
+		//.pipe(wiredep({
+		//	directory: 'app/bower_components',
+		//	exclude: [
+	   //     '/bootstrap-sass-official/assets/javascripts/' // already use by angular-bootstrap
+	   //   ]
+		//}))
 		.pipe($.inject(gulp.src(['.tmp/styles/*.css']), {
 			read: false,
 			ignorePath: '.tmp'
 		}))
-		.pipe($.inject(
-			gulp.src(['app/scripts/**/*.js']).pipe($.angularFilesort()).on('error', conf.errorHandler('AngularFilesort')),
-			{
-				relative: true
-			}
-		))		
+		//.pipe($.inject(
+		//	gulp.src(['app/scripts/**/*.js']).pipe($.angularFilesort()).on('error', conf.errorHandler('AngularFilesort')),
+		//	{
+		//		relative: true
+		//	}
+		//))
 		.pipe(gulp.dest('app'));
 });

@@ -13,5 +13,5 @@ gulp.task('styles', function() {
 		.pipe($.sass({outputStyle: 'compressed'}))
 		.pipe($.autoprefixer('last 1 version'))
 		.pipe(gulp.dest('.tmp/styles'))
-		.pipe($.size());;
+		.pipe($.size());
 });

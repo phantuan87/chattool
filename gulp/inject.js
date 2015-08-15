@@ -13,14 +13,14 @@ Inject task
 3. Inject dependences (*.js, *.css) for all html files from script, .tmp/styles folder.
 */
 gulp.task('inject', function() {
-	gulp.src('app/styles/*.scss')
-	    //.pipe(wiredep({
-	    //  directory: 'app/jspm_packages'
-	    //}))
-			.pipe($.inject(gulp.src('app/jspm_packages/**/*.scss'), {
-				read: false
-			}))
-	    .pipe(gulp.dest('app/styles'));
+	//gulp.src('app/styles/*.scss')
+	//    //.pipe(wiredep({
+	//    //  directory: 'app/jspm_packages'
+	//    //}))
+	//		.pipe($.inject(gulp.src('app/jspm_packages/**/*.scss'), {
+	//			read: false
+	//		}))
+	//    .pipe(gulp.dest('app/styles'));
 
 	gulp.src('app/*.html')
 		//.pipe(wiredep({

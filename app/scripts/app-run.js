@@ -1,14 +1,9 @@
-(function() {
-  'use strict';
+class RunPhase {
+  constructor() {}
 
-  angular
-    .module('app')
-    .run(runBlock);
-
-  /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
+  static init() {
   }
+}
 
-})();
+RunPhase.init.$inject = [];
+export default RunPhase;

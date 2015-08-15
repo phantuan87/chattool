@@ -1,21 +1,19 @@
-(function() {
-  'use strict';
+class RouteConfig {
 
-  angular
-    .module('app')
-    .config(routeConfig);
+  constructor() {}
 
-  /** @ngInject */
-  function routeConfig($stateProvider, $urlRouterProvider) {
+  static init($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'scripts/components/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      });
+        .state('home', {
+          url: '/',
+          templateUrl: 'scripts/components/main/main.html',
+          controller: 'MainController',
+          controllerAs: 'main'
+        });
 
     $urlRouterProvider.otherwise('/');
   }
+}
 
-})();
+RouteConfig.init.$inject = ['$stateProvider', '$urlRouterProvider'];
+export default RouteConfig;

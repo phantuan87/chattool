@@ -1,12 +1,3 @@
-/* global constants */
-(function() {
-  'use strict';
+import appModule from 'scripts/app-module';
 
-  angular
-    .module('app')
-    .constant('libs', {
-    	$: $,
-    	_: _
-    });
-
-})();
+appModule.constant('libs', {});

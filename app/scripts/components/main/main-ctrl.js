@@ -1,15 +1,10 @@
-(function() {
-  'use strict';
-
-  angular
-    .module('app')
-    .controller('MainController', MainController);
-
-  /** @ngInject */
-  function MainController($timeout) {
-    var vm = this;
-
-    vm.welcome = "Hello!";
+class MainController {
+  constructor() {
+    this.welcome = "Hello!";
   }
 
-})();
+}
+
+MainController.$inject = [];
+
+export default MainController;

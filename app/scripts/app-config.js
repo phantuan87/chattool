@@ -1,14 +1,8 @@
-(function() {
-  'use strict';
+export default class Configuration {
+  constructor() {}
 
-  angular
-    .module('app')
-    .config(config);
-
-  /** @ngInject */
-  function config($logProvider) {
-    // Enable log
-    $logProvider.debugEnabled(true);
+  static init() {
   }
+}
 
-})();
+Configuration.init.$inject = [];
